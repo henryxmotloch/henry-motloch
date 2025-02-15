@@ -4,22 +4,22 @@ import { ArrowRight } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Sales Data Analysis",
-      description: "Analyzed historical sales data to identify trends and opportunities for growth.",
+      title: "Power BI Dashboard for Prospective Homeowners",
+      description: "Developed an interactive dashboard that helps prospective homeowners compare neighborhoods by VPD crime rates. Utilized SQL and Excel for data cleaning and modeling, achieving actionable insights for sales optimization.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      tags: ["SQL", "Tableau", "Excel"],
+      tags: ["Power BI", "SQL", "Excel"],
     },
     {
-      title: "Customer Segmentation",
-      description: "Developed customer segments based on purchasing behavior and demographics.",
+      title: "Enterprise System Implementation Case Study",
+      description: "Collaborated on a team project simulating an ERP implementation for a mid-sized company, focusing on optimizing supply chain processes.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      tags: ["Python", "Power BI", "Statistics"],
+      tags: ["ERP", "Supply Chain", "Process Optimization"],
     },
     {
-      title: "Market Research Dashboard",
-      description: "Created interactive dashboard for real-time market insights.",
+      title: "IT Consulting Business Plan",
+      description: "Developed a detailed business plan for IT consulting services tailored to construction firms. Conducted market research, financial forecasting, and operational planning to outline a five-year growth strategy.",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-      tags: ["Tableau", "Data Visualization"],
+      tags: ["Business Planning", "Market Research", "Financial Analysis"],
     },
   ];
 
@@ -29,7 +29,7 @@ const Projects = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-display font-semibold mb-4">Featured Projects</h2>
           <p className="text-gray-600">
-            A selection of my recent data analysis work
+            A showcase of my data analysis and business optimization work
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
