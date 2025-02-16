@@ -6,7 +6,7 @@ const Projects = () => {
     {
       title: "Power BI Dashboard for Prospective Homeowners",
       description: "Developed an interactive dashboard that helps prospective homeowners compare neighborhoods by VPD crime rates. Utilized SQL and Excel for data cleaning and modeling, achieving actionable insights for sales optimization.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      image: "/lovable-uploads/974c6d4e-0b3e-4ff3-a16b-f27cd38e9d40.png",
       tags: ["Power BI", "SQL", "Excel"],
     },
     {

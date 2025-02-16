@@ -26,12 +26,12 @@ const Skills = () => {
     {
       icon: <GitBranch className="w-6 h-6" />,
       title: "Project Management",
-      description: "Leading cross-functional teams using JIRA, MS Teams, and Agile methodologies. Expertise in project documentation and planning.",
+      description: "Leading cross-functional teams using JIRA, Trello, MS Teams, and Agile methodologies. Expertise in project documentation and planning.",
     },
     {
       icon: <Settings className="w-6 h-6" />,
       title: "Process Optimization",
-      description: "Business analysis using SWOT, PESTLE, and process modeling. Creating user journeys and wireframes with Figma.",
+      description: "Business analysis using SWOT, PESTEL, and process modeling. Creating user journeys and wireframes with Figma.",
     },
   ];
 
