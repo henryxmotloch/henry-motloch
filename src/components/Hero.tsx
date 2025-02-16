@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="prose max-w-none text-gray-600 mb-8">
             <p className="mb-4">A results-driven taskmaster with a keen eye for efficiency, quality assurance, and project execution, I specialize in streamlining processes, optimizing workflows, and ensuring data integrity. I have achieved a diploma in Business IT Management, a certificate in Graphic Design, and currently working towards a Bachelor's of Business Administration from BCIT (GPA 4.0). My hands-on experience and tech stack of Power BI, SQL, VS code, Python, and ERP systems, I excel in data cleaning, modelling, and compliance.</p>
             <p className="mb-4">I thrive in fast-paced environments where attention to detail and strategic oversight are crucial. My leadership experience as a Day Manager at Earls Kitchen + Bar has honed my ability to coordinate teams, enforce standards, and drive performance.</p>
-            <p className="font-semibold text-base">Strengths: Leadership, data analysis, business analysis, project management, quality control, business intelligence, process optimization, and leadership.</p>
+            <p className="font-semibold text-base">Strengths: Leadership, data analysis, business analysis, project management, quality control, business intelligence, process optimization.</p>
           </div>
           
           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
