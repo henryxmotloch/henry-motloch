@@ -1,5 +1,5 @@
 
-import { ChartBar, ChartLine, Database } from 'lucide-react';
+import { ChartBar, ChartLine, Database, Code2, GitBranch, Settings } from 'lucide-react';
 
 const Skills = () => {
   const skills = [
@@ -17,6 +17,21 @@ const Skills = () => {
       icon: <ChartBar className="w-6 h-6" />,
       title: "Statistical Analysis",
       description: "Applying statistical methods to extract meaningful patterns and trends from complex datasets.",
+    },
+    {
+      icon: <Code2 className="w-6 h-6" />,
+      title: "Programming",
+      description: "Experience with Python, VS Code, and various data analysis libraries for automation and analysis.",
+    },
+    {
+      icon: <GitBranch className="w-6 h-6" />,
+      title: "Project Management",
+      description: "Leading cross-functional teams and managing complex projects with attention to detail.",
+    },
+    {
+      icon: <Settings className="w-6 h-6" />,
+      title: "Process Optimization",
+      description: "Streamlining workflows and implementing ERP systems for improved business efficiency.",
     },
   ];
 
