@@ -8,18 +8,21 @@ const Projects = () => {
       description: "Developed an interactive dashboard that helps prospective homeowners compare neighborhoods by VPD crime rates. Utilized SQL and Excel for data cleaning and modeling, achieving actionable insights for sales optimization.",
       image: "/lovable-uploads/974c6d4e-0b3e-4ff3-a16b-f27cd38e9d40.png",
       tags: ["Power BI", "SQL", "Excel"],
+      url: "https://github.com/yourusername/vpd-dashboard", // Replace with actual project URL
     },
     {
       title: "Enterprise System Implementation Case Study",
       description: "Collaborated on a team project simulating an ERP implementation for a mid-sized company, focusing on optimizing supply chain processes.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
       tags: ["ERP", "Supply Chain", "Process Optimization"],
+      url: "https://github.com/yourusername/erp-case-study", // Replace with actual project URL
     },
     {
       title: "IT Consulting Business Plan",
       description: "Developed a detailed business plan for IT consulting services tailored to construction firms. Conducted market research, financial forecasting, and operational planning to outline a five-year growth strategy.",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
       tags: ["Business Planning", "Market Research", "Financial Analysis"],
+      url: "https://github.com/yourusername/it-consulting-plan", // Replace with actual project URL
     },
   ];
 
@@ -59,8 +62,10 @@ const Projects = () => {
                   ))}
                 </div>
                 <a
-                  href="#"
-                  className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900"
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   View Details
                   <ArrowRight className="w-4 h-4 ml-1" />
