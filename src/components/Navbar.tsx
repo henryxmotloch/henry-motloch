@@ -26,6 +26,14 @@ const Navbar = () => {
             <a href="#skills" className="text-sm hover:text-gray-600 transition-colors">Skills</a>
             <a href="#projects" className="text-sm hover:text-gray-600 transition-colors">Projects</a>
             <a href="#contact" className="text-sm hover:text-gray-600 transition-colors">Contact</a>
+            <a 
+              href="https://www.linkedin.com/in/henry-motloch/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-sm hover:text-gray-600 transition-colors"
+            >
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>
