@@ -51,27 +51,27 @@ const Navbar = () => {
           </div>
         </div>
         
-        {/* Mobile navigation menu */}
+        {/* Mobile navigation menu - positioned on the right */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-2">
-            <div className="flex flex-col space-y-3">
+          <div className="md:hidden absolute right-6 mt-2 w-48 bg-gray-50 rounded-lg shadow-md overflow-hidden">
+            <div className="flex flex-col py-2">
               <a 
                 href="#skills" 
-                className="text-sm hover:text-gray-600 transition-colors py-2"
+                className="text-sm hover:text-gray-900 hover:bg-gray-100 px-4 py-3 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Skills
               </a>
               <a 
                 href="#projects" 
-                className="text-sm hover:text-gray-600 transition-colors py-2"
+                className="text-sm hover:text-gray-900 hover:bg-gray-100 px-4 py-3 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Projects
               </a>
               <a 
                 href="#contact" 
-                className="text-sm hover:text-gray-600 transition-colors py-2"
+                className="text-sm hover:text-gray-900 hover:bg-gray-100 px-4 py-3 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
@@ -80,7 +80,7 @@ const Navbar = () => {
                 href="https://www.linkedin.com/in/henry-motloch/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-sm hover:text-gray-600 transition-colors py-2"
+                className="text-sm hover:text-gray-900 hover:bg-gray-100 px-4 py-3 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 LinkedIn

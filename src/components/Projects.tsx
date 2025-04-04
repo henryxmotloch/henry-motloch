@@ -1,4 +1,3 @@
-
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +8,7 @@ const Projects = () => {
       description: "Developed an interactive dashboard that helps prospective homeowners compare neighborhoods by VPD crime rates. Utilized SQL and Excel for data cleaning and modeling, achieving actionable insights for sales optimization.",
       image: "/lovable-uploads/974c6d4e-0b3e-4ff3-a16b-f27cd38e9d40.png",
       tags: ["Power BI", "SQL", "Excel"],
-      url: "/projects/power-bi-dashboard", // Link to the internal project gallery
+      url: "/projects/power-bi-dashboard", // Internal link to the project gallery
       isInternalLink: true,
     },
     {
