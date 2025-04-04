@@ -51,40 +51,42 @@ const Navbar = () => {
           </div>
         </div>
         
-        {/* Mobile navigation menu - positioned on the right */}
+        {/* Mobile navigation menu - positioned on the right directly under the button */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute right-6 mt-2 w-48 bg-gray-50 rounded-lg shadow-md overflow-hidden">
-            <div className="flex flex-col py-2">
-              <a 
-                href="#skills" 
-                className="text-sm hover:text-gray-900 hover:bg-gray-100 px-4 py-3 transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Skills
-              </a>
-              <a 
-                href="#projects" 
-                className="text-sm hover:text-gray-900 hover:bg-gray-100 px-4 py-3 transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Projects
-              </a>
-              <a 
-                href="#contact" 
-                className="text-sm hover:text-gray-900 hover:bg-gray-100 px-4 py-3 transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Contact
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/henry-motloch/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-sm hover:text-gray-900 hover:bg-gray-100 px-4 py-3 transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                LinkedIn
-              </a>
+          <div className="md:hidden absolute right-0 mt-2 w-full px-6">
+            <div className="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+              <div className="flex flex-col py-2">
+                <a 
+                  href="#skills" 
+                  className="text-sm hover:text-gray-900 hover:bg-gray-100 px-4 py-3 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Skills
+                </a>
+                <a 
+                  href="#projects" 
+                  className="text-sm hover:text-gray-900 hover:bg-gray-100 px-4 py-3 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Projects
+                </a>
+                <a 
+                  href="#contact" 
+                  className="text-sm hover:text-gray-900 hover:bg-gray-100 px-4 py-3 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Contact
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/henry-motloch/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-sm hover:text-gray-900 hover:bg-gray-100 px-4 py-3 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  LinkedIn
+                </a>
+              </div>
             </div>
           </div>
         )}

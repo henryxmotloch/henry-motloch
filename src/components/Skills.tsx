@@ -1,5 +1,5 @@
 
-import { ChartBar, ChartLine, Database, Code2, GitBranch, Settings } from 'lucide-react';
+import { ChartBar, ChartLine, Database, Code2, GitBranch, Settings, Palette, Users } from 'lucide-react';
 
 const Skills = () => {
   const skills = [
@@ -33,6 +33,16 @@ const Skills = () => {
       title: "Process Optimization",
       description: "Business analysis using SWOT, PESTEL, and process modeling. Creating user journeys and wireframes with Figma.",
     },
+    {
+      icon: <Palette className="w-6 h-6" />,
+      title: "Graphic Design",
+      description: "Crafts clean, purpose-driven visuals rooted in brand strategy, print design, and storytelling for both digital and physical formats.",
+    },
+    {
+      icon: <Users className="w-6 h-6" />,
+      title: "Management",
+      description: "Leads high-performing teams with empathy and efficiency, balancing day-to-day operations with long-term team and customer success.",
+    },
   ];
 
   return (
@@ -44,7 +54,7 @@ const Skills = () => {
             Leveraging technical expertise to deliver data-driven solutions
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skills.map((skill, index) => (
             <div
               key={index}

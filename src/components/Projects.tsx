@@ -1,3 +1,4 @@
+
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -8,23 +9,31 @@ const Projects = () => {
       description: "Developed an interactive dashboard that helps prospective homeowners compare neighborhoods by VPD crime rates. Utilized SQL and Excel for data cleaning and modeling, achieving actionable insights for sales optimization.",
       image: "/lovable-uploads/974c6d4e-0b3e-4ff3-a16b-f27cd38e9d40.png",
       tags: ["Power BI", "SQL", "Excel"],
-      url: "/projects/power-bi-dashboard", // Internal link to the project gallery
+      url: "/projects/power-bi-dashboard", 
       isInternalLink: true,
     },
     {
-      title: "Enterprise System Implementation Case Study",
-      description: "Collaborated on a team project simulating an ERP implementation for a mid-sized company, focusing on optimizing supply chain processes.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      tags: ["ERP", "Supply Chain", "Process Optimization"],
-      url: "https://github.com/yourusername/erp-case-study", // Replace with actual project URL
+      title: "Aloha Plumeria Brand Guide",
+      description: "Developed a full brand identity for a boutique hotel, reflecting luxury and island warmth through typography, color, and logo design.",
+      image: "/lovable-uploads/dfc1e144-b851-4b84-8633-81e60ae3ae5b.png",
+      tags: ["Branding", "Logo Design", "Typography"],
+      url: "/projects/aloha-plumeria",
+      isInternalLink: true,
+    },
+    {
+      title: "Willow Grove Stationery Package",
+      description: "Designed a full stationery suite for a sustainable townhouse brand, using minimal design and nature-inspired colors to convey eco values.",
+      image: "https://images.unsplash.com/photo-1586282391129-76a7d051a438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+      tags: ["Print Design", "Identity", "Eco-Friendly"],
+      url: "https://github.com/yourusername/willow-grove", 
       isInternalLink: false,
     },
     {
-      title: "IT Consulting Business Plan",
-      description: "Developed a detailed business plan for IT consulting services tailored to construction firms. Conducted market research, financial forecasting, and operational planning to outline a five-year growth strategy.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-      tags: ["Business Planning", "Market Research", "Financial Analysis"],
-      url: "https://github.com/yourusername/it-consulting-plan", // Replace with actual project URL
+      title: "BITMAN MVP",
+      description: "Built a Power BI dashboard aligning curriculum goals with industry standards, helping students, faculty, and schools improve program clarity.",
+      image: "https://images.unsplash.com/photo-1543286386-2e659306cd6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+      tags: ["Power BI", "Education", "Data Analysis"],
+      url: "https://github.com/yourusername/bitman-mvp", 
       isInternalLink: false,
     },
   ];
@@ -38,7 +47,7 @@ const Projects = () => {
             A showcase of my data analysis and business optimization work
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
