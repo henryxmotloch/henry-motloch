@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ProjectPage from "./pages/ProjectPage";
 import AlohaPlumeriaPage from "./pages/AlohaPlumeriaPage";
+import WillowGrovePage from "./pages/WillowGrovePage";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/projects/power-bi-dashboard" element={<ProjectPage />} />
           <Route path="/projects/aloha-plumeria" element={<AlohaPlumeriaPage />} />
+          <Route path="/projects/willow-grove" element={<WillowGrovePage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
