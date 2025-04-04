@@ -1,4 +1,3 @@
-
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -31,10 +30,10 @@ const Projects = () => {
     {
       title: "BITMAN MVP",
       description: "Built a Power BI dashboard aligning curriculum goals with industry standards, helping students, faculty, and schools improve program clarity.",
-      image: "https://images.unsplash.com/photo-1543286386-2e659306cd6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+      image: "/lovable-uploads/a1d767bd-84f0-4193-b736-0d3d6785d851.png",
       tags: ["Power BI", "Education", "Data Analysis"],
-      url: "https://github.com/yourusername/bitman-mvp", 
-      isInternalLink: false,
+      url: "/projects/bitman-mvp", 
+      isInternalLink: true,
     },
   ];
 
