@@ -13,21 +13,30 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
     // Check for saved theme preference or system preference
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme && (savedTheme === "light" || savedTheme === "dark")) {
-      return savedTheme;
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme && (savedTheme === "light" || savedTheme === "dark")) {
+        return savedTheme;
+      }
+      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }
-    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    return "light"; // Default for SSR
   });
 
   useEffect(() => {
     // Update localStorage and document class when theme changes
-    localStorage.setItem("theme", theme);
-    
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
+    if (typeof window !== 'undefined') {
+      localStorage.setItem("theme", theme);
+      
+      const root = window.document.documentElement;
+      
+      if (theme === "dark") {
+        root.classList.add("dark");
+      } else {
+        root.classList.remove("dark");
+      }
+      
+      console.log("Theme changed to:", theme);
     }
   }, [theme]);
 
