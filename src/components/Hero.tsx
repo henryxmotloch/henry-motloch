@@ -1,5 +1,7 @@
-import { ChevronDown } from 'lucide-react';
+
+import { ChevronDown, Linkedin } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+
 const Hero = () => {
   return <section className="min-h-screen flex items-center justify-center relative bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-6 pt-32 pb-16">
@@ -21,12 +23,16 @@ const Hero = () => {
           <div className="prose max-w-none text-gray-600 mb-8">
             <p className="mb-4">A results-driven taskmaster with a keen eye for efficiency, quality assurance, and project execution, I specialize in streamlining processes, optimizing workflows, and ensuring data integrity. I have achieved a diploma in Business IT Management, a certificate in Graphic Design, and currently working towards a Bachelor's of Business Administration from BCIT (GPA 4.0). My hands-on experience and tech stack of Power BI, SQL, VS code, Python, and ERP systems, I excel in data cleaning, modelling, and compliance.</p>
             <p className="mb-4">I thrive in fast-paced environments where attention to detail and strategic oversight are crucial. My leadership experience as a Day Manager at Earls Kitchen + Bar has honed my ability to coordinate teams, enforce standards, and drive performance.</p>
-            <p className="font-semibold text-base">Strengths: Leadership, data analysis, business analysis, design, project management, quality control, business intelligence, process optimization.</p>
+            <p className="font-semibold text-base">Strengths: Leadership, data analysis, business analysis, design, project management, quality control, business intelligence, process optimization.</p>
           </div>
           
           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
             <a href="#projects" className="px-8 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors">
               View Projects
+            </a>
+            <a href="https://www.linkedin.com/in/henry-motloch/" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-[#0077B5] text-white rounded-lg hover:bg-[#006099] transition-colors flex items-center gap-2">
+              <Linkedin size={18} />
+              LinkedIn
             </a>
             <a href="#contact" className="px-8 py-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
               Get in Touch
@@ -39,4 +45,5 @@ const Hero = () => {
       </a>
     </section>;
 };
+
 export default Hero;

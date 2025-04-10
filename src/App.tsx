@@ -10,31 +10,26 @@ import ProjectPage from "./pages/ProjectPage";
 import AlohaPlumeriaPage from "./pages/AlohaPlumeriaPage";
 import WillowGrovePage from "./pages/WillowGrovePage";
 import BitmanMvpPage from "./pages/BitmanMvpPage";
-import { ThemeProvider } from "./components/ThemeProvider";
-import ThemeToggle from "./components/ThemeToggle";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <ThemeProvider>
-      <TooltipProvider>
-        <BrowserRouter>
-          <ThemeToggle />
-          <Toaster />
-          <Sonner />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/projects/power-bi-dashboard" element={<ProjectPage />} />
-            <Route path="/projects/aloha-plumeria" element={<AlohaPlumeriaPage />} />
-            <Route path="/projects/willow-grove" element={<WillowGrovePage />} />
-            <Route path="/projects/bitman-mvp" element={<BitmanMvpPage />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </ThemeProvider>
+    <TooltipProvider>
+      <BrowserRouter>
+        <Toaster />
+        <Sonner />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/projects/power-bi-dashboard" element={<ProjectPage />} />
+          <Route path="/projects/aloha-plumeria" element={<AlohaPlumeriaPage />} />
+          <Route path="/projects/willow-grove" element={<WillowGrovePage />} />
+          <Route path="/projects/bitman-mvp" element={<BitmanMvpPage />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
   </QueryClientProvider>
 );
 
