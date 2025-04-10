@@ -8,7 +8,7 @@ const AlohaPlumeriaGallery = () => {
   
   const projectImages = [
     {
-      src: "/lovable-uploads/c47df436-cc9b-4ec3-b552-b795f73ec34e.png",
+      src: "/lovable-uploads/df7432ba-f467-46db-8bcf-465a9846de6e.png",
       caption: "Cover Page - Aloha Plumeria 2023 Brand Guide",
       alt: "Cover page of the Aloha Plumeria brand guide showing the logo"
     },
@@ -77,39 +77,40 @@ const AlohaPlumeriaGallery = () => {
   };
 
   return (
-    <div className="min-h-screen pt-20 bg-gray-50">
+    <div className="min-h-screen pt-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center mb-8">
-            <Link to="/" className="text-gray-600 hover:text-gray-900 flex items-center">
+            <Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white flex items-center transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Portfolio
             </Link>
           </div>
           
-          <h1 className="text-3xl md:text-4xl font-display font-bold mb-6">
+          <h1 className="text-3xl md:text-4xl font-display font-bold mb-6 dark:text-white">
             Aloha Plumeria Brand Guide
           </h1>
           
-          <div className="mb-8 text-gray-700">
+          <div className="mb-8 text-gray-700 dark:text-gray-300">
             <p className="mb-4">
               A comprehensive brand identity developed for a luxury boutique hotel in Hawaii, featuring a 
               distinctive visual language that captures the essence of island hospitality and luxury.
             </p>
             <div className="flex flex-wrap gap-2 mt-4">
-              <span className="px-3 py-1 bg-gray-200 rounded-full text-sm">Branding</span>
-              <span className="px-3 py-1 bg-gray-200 rounded-full text-sm">Logo Design</span>
-              <span className="px-3 py-1 bg-gray-200 rounded-full text-sm">Typography</span>
-              <span className="px-3 py-1 bg-gray-200 rounded-full text-sm">Color Theory</span>
+              <span className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm dark:text-gray-200">Branding</span>
+              <span className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm dark:text-gray-200">Logo Design</span>
+              <span className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm dark:text-gray-200">Typography</span>
+              <span className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm dark:text-gray-200">Color Theory</span>
             </div>
           </div>
           
-          <div className="bg-white rounded-xl shadow-md overflow-hidden">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-colors">
             <div className="relative">
               <img 
                 src={projectImages[currentIndex].src} 
                 alt={projectImages[currentIndex].alt}
-                className="w-full object-contain max-h-[800px]"
+                className="w-full object-contain max-h-[800px] transition-opacity"
+                loading="lazy"
               />
               
               <div className="absolute inset-0 flex items-center justify-between p-4">
@@ -132,10 +133,10 @@ const AlohaPlumeriaGallery = () => {
             
             <div className="p-6">
               <div className="flex items-center justify-between">
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-300">
                   {currentIndex + 1} / {projectImages.length}
                 </p>
-                <p className="text-gray-700 font-medium">
+                <p className="text-gray-700 dark:text-gray-300 font-medium">
                   {projectImages[currentIndex].caption}
                 </p>
               </div>
@@ -143,16 +144,16 @@ const AlohaPlumeriaGallery = () => {
           </div>
           
           <div className="mt-8">
-            <h2 className="text-2xl font-semibold mb-4">Project Details</h2>
-            <div className="prose max-w-none">
-              <p>
+            <h2 className="text-2xl font-semibold mb-4 dark:text-white">Project Details</h2>
+            <div className="prose max-w-none dark:prose-invert">
+              <p className="text-gray-700 dark:text-gray-300">
                 This brand identity project for Aloha Plumeria, a boutique hotel in Hawaii, focused on creating a 
                 visual language that embodies the hotel's core values: charm, bohemian style, and refreshing hospitality.
               </p>
-              <p className="mt-4">
+              <p className="mt-4 text-gray-700 dark:text-gray-300">
                 Key components of the brand identity include:
               </p>
-              <ul className="list-disc pl-5 mt-2 space-y-1">
+              <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-700 dark:text-gray-300">
                 <li>A logo that combines a plumeria flower with butterfly wings, symbolizing transformation and renewal</li>
                 <li>A color palette featuring warm orange tones and soft purples to represent sunrise and island flora</li>
                 <li>Typography selections that balance modern simplicity with organic character</li>

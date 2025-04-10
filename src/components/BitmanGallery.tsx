@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -8,14 +7,9 @@ const BitmanGallery = () => {
   
   const projectImages = [
     {
-      src: "/lovable-uploads/a1d767bd-84f0-4193-b736-0d3d6785d851.png",
-      caption: "Cover Page - BITMAN MVP Dashboard",
-      alt: "Cover page showing the BITMAN MVP dashboard"
-    },
-    {
-      src: "/lovable-uploads/1139eff2-4f0b-4af7-8817-cc6daf689ad8.png",
-      caption: "Curriculum Goals and Industry Alignment",
-      alt: "Dashboard showing alignment between curriculum goals and industry standards"
+      src: "/lovable-uploads/a0c6f826-fb3f-4f94-a942-e220a591aefe.png",
+      caption: "BITMAN MVP Dashboard",
+      alt: "BITMAN MVP Dashboard showing data visualization"
     },
     {
       src: "/lovable-uploads/142111a7-b12c-463e-8ae3-341527871d01.png",
