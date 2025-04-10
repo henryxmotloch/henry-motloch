@@ -15,7 +15,7 @@ const Projects = () => {
     {
       title: "Aloha Plumeria Brand Guide",
       description: "Developed a full brand identity for a boutique hotel, reflecting luxury and island warmth through typography, color, and logo design.",
-      image: "/lovable-uploads/df7432ba-f467-46db-8bcf-465a9846de6e.png",
+      image: "/lovable-uploads/0823bda1-32cf-4ecd-beb7-d15b3ebf8ed4.png",
       tags: ["Branding", "Logo Design", "Typography"],
       url: "/projects/aloha-plumeria",
       isInternalLink: true,

@@ -8,7 +8,7 @@ const AlohaPlumeriaGallery = () => {
   
   const projectImages = [
     {
-      src: "/lovable-uploads/df7432ba-f467-46db-8bcf-465a9846de6e.png",
+      src: "/lovable-uploads/0823bda1-32cf-4ecd-beb7-d15b3ebf8ed4.png",
       caption: "Cover Page - Aloha Plumeria 2023 Brand Guide",
       alt: "Cover page of the Aloha Plumeria brand guide showing the logo"
     },
