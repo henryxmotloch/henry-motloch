@@ -34,7 +34,7 @@ const Hero = () => {
               <Linkedin size={18} />
               LinkedIn
             </a>
-            <a href="/lovable-uploads/63cd02b9-7da5-4c04-a423-3a52e34f1685.png" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors flex items-center gap-2">
+            <a href="/resume" className="px-8 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors flex items-center gap-2">
               <FileText size={18} />
               Resume
             </a>

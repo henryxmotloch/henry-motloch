@@ -10,6 +10,7 @@ import ProjectPage from "./pages/ProjectPage";
 import AlohaPlumeriaPage from "./pages/AlohaPlumeriaPage";
 import WillowGrovePage from "./pages/WillowGrovePage";
 import BitmanMvpPage from "./pages/BitmanMvpPage";
+import Resume from "./components/Resume";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/projects/aloha-plumeria" element={<AlohaPlumeriaPage />} />
           <Route path="/projects/willow-grove" element={<WillowGrovePage />} />
           <Route path="/projects/bitman-mvp" element={<BitmanMvpPage />} />
+          <Route path="/resume" element={<Resume />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
