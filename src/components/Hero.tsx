@@ -1,5 +1,5 @@
 
-import { ChevronDown, Linkedin } from 'lucide-react';
+import { ChevronDown, Linkedin, FileText } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
@@ -33,6 +33,10 @@ const Hero = () => {
             <a href="https://www.linkedin.com/in/henry-motloch/" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-[#0077B5] text-white rounded-lg hover:bg-[#006099] transition-colors flex items-center gap-2">
               <Linkedin size={18} />
               LinkedIn
+            </a>
+            <a href="/lovable-uploads/63cd02b9-7da5-4c04-a423-3a52e34f1685.png" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors flex items-center gap-2">
+              <FileText size={18} />
+              Resume
             </a>
             <a href="#contact" className="px-8 py-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
               Get in Touch
